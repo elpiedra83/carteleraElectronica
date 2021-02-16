@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cartelera Electronica</title>
+  <meta name="description" content="Cartelera Electronica - UCUDAL">
+  <meta name="author" content="eecheverri">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/jquery-2.2.3.min.js"></script>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/render.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="header">
+      <div class="left">
+        <img class="brand-logo" src="images/logo.png"/>
+        <h2 class="title">Próximas clases</h2>
+      </div>
+      <span class="right"><!--<div class="current-date"></div>--><div class="current-time"></div></span>
+    </div>
+    <div class="content">
+      <ul id="lista1" class="events-list">
+
+      </ul>
+    </div>
+  </div>
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+
+<script>
+  $(document).ready(function() {
+	setTitle()
+	setDate()
+	hideHeader() 
+	hideHeaderContent()
+	setHeaderColor()
+	setContentHeight()
+	refreshCurrentTime()	
+    getData();
+	pageScroll();
+  })
+</script>
+</html>

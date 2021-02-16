@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cartelera Electronica</title>
+  <meta name="description" content="Cartelera Electronica - UCUDAL">
+  <meta name="author" content="eecheverri">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/jquery-2.2.3.min.js"></script>
+  <script src="scripts/api.min.js"></script>
+  <script src="scripts/render.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="main-container">
+      <div class="left">
+        <h2 id = 'asd1' class="title1">document.body.scrollHeight</h2>
+      </div>
+      <div class="left">
+        <h2 id = 'asd2' class="title">Próximas clases</h2>
+      </div>
+      <div class="left">
+        <h2 class="title">Próximas clases</h2>
+      </div>
+      <div class="left">
+        <h2 class="title">Próximas clases</h2>
+      </div>	  
+  </div>
+</body>
+
+<script>
+  $(document).ready(function() {	
+	document.getElementById("asd1").innerHTML = document.body.scrollHeight;
+	document.getElementById("asd2").innerHTML = document.body.offsetHeight;
+  })
+</script>
+</html>
